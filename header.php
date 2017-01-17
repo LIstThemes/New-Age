@@ -51,6 +51,15 @@
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <?php
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_class'           => 'nav navbar-nav navbar-right',
+                    'walker'            => new wp_bootstrap_navwalker()            
+                ) );
+            ?>
+            <!--
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a class="page-scroll" href="#download">Download</a>
@@ -62,6 +71,7 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
+                -->
             </div>
             <!-- /.navbar-collapse -->
         </div>
